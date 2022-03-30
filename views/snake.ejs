@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/snake_style.css">
+  <title>Arcade: Snake</title>
+</head>
+
+<body>
+  <main>
+    <div class="float-container">
+      <div class="float-child4">
+        <h1>
+          ARCADE: Snake
+        </h1>
+      </div>
+      <div class="float-child2">
+        <h2>
+          <div class="hiscore">0</div>
+          <div class="speed">0</div>
+          <div class="score">0</div>
+        </h2>
+      </div>
+      <div class="float-child1">
+        <div id="grid-container">
+        </div>
+      </div>
+
+      <div class="float-child3">
+        <div id="buttons">
+          <div class="empty"></div>
+          <button onclick="goUp()">UP</button>
+          <div class="empty"></div>
+          <button onclick="goLeft()">LEFT</button>
+          <div class="empty"></div>
+          <button onclick="goRight()">RIGHT</button>
+          <div class="empty"></div>
+          <button onclick="goDown()">DOWN</button>
+          <div class="empty"></div>
+        </div>
+      </div>
+  </main>
+
+  <script src="/game.js"></script>
+</body>
+
+</html>
