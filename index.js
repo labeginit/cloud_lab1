@@ -14,5 +14,5 @@ app.use(express.json({limit: '100MB'}));
 app.listen(port, () => console.log('//http:localhost:' + port));
 
 //import rest api functionality
-const setupRESTapi = require('./rest-api');
-setupRESTapi(app);
+//const setupRESTapi = require('./rest-api');
+//setupRESTapi(app);
