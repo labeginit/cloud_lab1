@@ -29,12 +29,13 @@ The hyperlinks on the default page can help navigate to the above mentioned page
     **Scaling dynos... done, now running web at 1:Free** 
 
 7.  Attempt to open the link by *heroku open* showed that the application crashed. Using the command *heroku logs –-tail* helped discover several errors in the project which are related only to heroku functioning. They were:  
-*‘npm ERR! Missing script: "start"’* and *Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch*  
+*‘npm ERR! Missing script: "start"’* and *'Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch'*  
 The first one was solved by editing the package.json file. Another error was related to the port number that was hardcoded in index.js. It took a few attempts to solve the errors.
 8. After commiting the final changes the local validation was performed:  
     *npm install*  
     *heroku local* - result OK  
-9.  The changes pushed to heroku  *git heroku push main*
+9.  The changes pushed to heroku:  
+    *git heroku push main*
 10. Command *heroku open* opened the webpage and this time it was shown.  
-![The running webapp!](/img/heroku_1.png)    
+![The running webapp!](/img/heroku_last.png)    
 The application is available at  <https://radiant-fortress-71791.herokuapp.com/> 
